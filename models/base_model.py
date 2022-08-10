@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """This module defines a base class for all models in our hbnb clone"""
+from pyexpat import model
 import uuid
 from datetime import datetime
 
@@ -45,7 +46,7 @@ class BaseModel:
 
     def delete(self):
         """Delete the current instance from storage."""
-        models.storage.delete(self)
+        model.storage.delete(self)
 
     def __str__(self):
         """Return the print/str representation of the BaseModel instance."""
