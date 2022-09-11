@@ -29,7 +29,7 @@ def hbnb_():
 @app.route('/c/<text>', strict_slashes=False)
 def cisfun(text):
     """display C  followed by the value of the text variable"""
-    return 'C' + text.replace('_', ' ')
+    return 'C ' + text.replace('_', ' ')
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
